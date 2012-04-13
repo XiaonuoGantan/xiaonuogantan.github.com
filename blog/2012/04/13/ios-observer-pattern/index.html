@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>My Octopress Blog</title>
+  <title>iOS NSNotificationCenter Pattern - My Octopress Blog</title>
   <meta name="author" content="Your Name">
 
   
@@ -28,7 +28,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://XiaonuoGantan.github.com">
+  <link rel="canonical" href="http://XiaonuoGantan.github.com/blog/2012/04/13/ios-observer-pattern">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <script src="/javascripts/modernizr-2.0.js"></script>
@@ -72,15 +72,12 @@
 </nav>
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2012/04/13/ios-observer-pattern/">iOS NSNotificationCenter Pattern</a></h1>
+      <h1 class="entry-title">iOS NSNotificationCenter Pattern</h1>
     
     
       <p class="meta">
@@ -103,7 +100,7 @@
   </header>
 
 
-  <div class="entry-content"><p>iOS NSNotificationCenter AddObserver and RemoveObserver calls in different methods:</p>
+<div class="entry-content"><p>iOS NSNotificationCenter AddObserver and RemoveObserver calls in different methods:</p>
 
 <figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -132,18 +129,57 @@
 adding and removing observers inside incorrect view controller methods will make the notification being handeled twice or none at all. The above code
 shows how to do it correctly so that the method handler (_handleAwesome:) will be called only once.</p>
 </div>
+
+
+  <footer>
+    <p class="meta">
+      
   
+
+<span class="byline author vcard">Posted by <span class="fn">Xiaonuo Gantan</span></span>
+
+      
+
+
+
+
+
+
+
+
   
 
 
-    </article>
+<time datetime="2012-04-13T22:29:00+00:00" pubdate data-updated="true">Apr 13<span>th</span>, 2012</time>
+      
+
+<span class="categories">
   
-  <div class="pagination">
+    <a class='category' href='/blog/categories/ios/'>iOS</a>
+  
+</span>
+
+
+    </p>
     
-    <a href="/blog/archives">Blog Archives</a>
-    
-  </div>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://XiaonuoGantan.github.com/blog/2012/04/13/ios-observer-pattern/" data-via="" data-counturl="http://XiaonuoGantan.github.com/blog/2012/04/13/ios-observer-pattern/" >Tweet</a>
+  
+  
+  
 </div>
+
+    
+    <p class="meta">
+      
+      
+    </p>
+  </footer>
+</article>
+
+</div>
+
 <aside class="sidebar">
   
     <section>
@@ -164,6 +200,7 @@ shows how to do it correctly so that the method handler (_handleAwesome:) will b
 
   
 </aside>
+
 
     </div>
   </div>
