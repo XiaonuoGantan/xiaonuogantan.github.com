@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: iOS | My Octopress Blog]]></title>
+  <title><![CDATA[Category: iOS | Xiaonuo Gantan's Blog]]></title>
   <link href="http://XiaonuoGantan.github.com/blog/categories/ios/atom.xml" rel="self"/>
   <link href="http://XiaonuoGantan.github.com/"/>
-  <updated>2012-04-13T22:59:31+00:00</updated>
+  <updated>2012-04-13T23:05:33+00:00</updated>
   <id>http://XiaonuoGantan.github.com/</id>
   <author>
-    <name><![CDATA[Your Name]]></name>
+    <name><![CDATA[Xiaonuo Gantan]]></name>
     
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
@@ -34,10 +34,6 @@
 <span class='line-number'>12</span>
 <span class='line-number'>13</span>
 <span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
 </pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewDidLoad</span> <span class="p">{</span><span class="o">&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
 </span><span class='line'>
 </span><span class='line'><span class="o">&lt;</span><span class="n">pre</span><span class="o">&gt;&lt;</span><span class="n">code</span><span class="o">&gt;</span><span class="n">NSNotificationCenter</span> <span class="o">*</span><span class="n">center</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSNotificationCenter</span> <span class="n">defaultCenter</span><span class="p">];</span>
@@ -51,12 +47,10 @@
 </span><span class='line'><span class="o">&lt;</span><span class="n">li</span><span class="o">&gt;</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nl">viewWillDisappear:</span><span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="n">animated</span> <span class="p">{</span>
 </span><span class='line'>  <span class="n">NSNotificationCenter</span> <span class="o">*</span><span class="n">center</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSNotificationCenter</span> <span class="n">defaultCenter</span><span class="p">];</span>
 </span><span class='line'>  <span class="p">[</span><span class="n">center</span> <span class="nl">removeObserver:</span><span class="n">self</span> <span class="nl">name:</span><span class="n">AWESOME_NOTIFICATION</span> <span class="nl">object:</span><span class="nb">nil</span><span class="p">];</span>
-</span><span class='line'><span class="p">}</span><span class="o">&lt;/</span><span class="n">li</span><span class="o">&gt;</span>
-</span><span class='line'><span class="o">&lt;/</span><span class="n">ul</span><span class="o">&gt;</span>
-</span><span class='line'>
-</span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>
-</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+</span><span class='line'><span class="p">}</span>
+</span></code></pre></td></tr></table></div></figure></notextile></div></li>
+</ul>
+
 
 <p>Because the view's life cycle in iOS is not clearly defined over multiple situations (enter background, user interrupt, phone call, etc.), sometimes
 adding and removing observers inside incorrect view controller methods will make the notification being handeled twice or none at all. The above code
