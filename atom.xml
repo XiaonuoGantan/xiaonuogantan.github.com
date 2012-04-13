@@ -4,7 +4,7 @@
   <title><![CDATA[Xiaonuo Gantan's Blog]]></title>
   <link href="http://XiaonuoGantan.github.com/atom.xml" rel="self"/>
   <link href="http://XiaonuoGantan.github.com/"/>
-  <updated>2012-04-13T23:35:06+00:00</updated>
+  <updated>2012-04-13T23:45:29+00:00</updated>
   <id>http://XiaonuoGantan.github.com/</id>
   <author>
     <name><![CDATA[Xiaonuo Gantan]]></name>
@@ -39,13 +39,17 @@
 <span class='line-number'>8</span>
 <span class='line-number'>9</span>
 <span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
 </pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewDidLoad</span> <span class="p">{</span>
+</span><span class='line'>    <span class="p">[</span><span class="n">super</span> <span class="n">viewDidLoad</span><span class="p">];</span>
 </span><span class='line'>    <span class="n">NSNotificationCenter</span> <span class="o">*</span><span class="n">center</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSNotificationCenter</span> <span class="n">defaultCenter</span><span class="p">];</span>
 </span><span class='line'>    <span class="p">[</span><span class="n">center</span> <span class="nl">removeObserver:</span><span class="n">self</span> <span class="nl">name:</span><span class="n">AWESOME_NOTIFICATION</span> <span class="nl">object:</span><span class="nb">nil</span><span class="p">];</span>
 </span><span class='line'>    <span class="p">[</span><span class="n">center</span> <span class="nl">addObserver:</span><span class="n">self</span> <span class="nl">selector:</span><span class="k">@selector</span><span class="p">(</span><span class="nl">_handleAwesome:</span><span class="p">)</span> <span class="nl">name:</span><span class="n">AWESOME_NOTIFICATION</span> <span class="nl">object:</span><span class="nb">nil</span><span class="p">];</span>
 </span><span class='line'><span class="p">}</span>
 </span><span class='line'>
 </span><span class='line'><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewWillDisappear:</span><span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nv">animated</span> <span class="p">{</span>
+</span><span class='line'>    <span class="p">[</span><span class="n">super</span> <span class="nl">viewWillDisappear:</span><span class="n">animated</span><span class="p">];</span>
 </span><span class='line'>    <span class="n">NSNotificationCenter</span> <span class="o">*</span><span class="n">center</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSNotificationCenter</span> <span class="n">defaultCenter</span><span class="p">];</span>
 </span><span class='line'>    <span class="p">[</span><span class="n">center</span> <span class="nl">removeObserver:</span><span class="n">self</span> <span class="nl">name:</span><span class="n">AWESOME_NOTIFICATION</span> <span class="nl">object:</span><span class="nb">nil</span><span class="p">];</span>
 </span><span class='line'><span class="p">}</span>
