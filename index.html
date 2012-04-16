@@ -132,32 +132,7 @@
 
   <div class="entry-content"><p>iOS NSNotificationCenter AddObserver and RemoveObserver calls in different methods:</p>
 
-<figure class='code'> <div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-</pre></td><td class='code'><pre><code class='objc'><span class='line'><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewDidLoad</span> <span class="p">{</span>
-</span><span class='line'>    <span class="p">[</span><span class="n">super</span> <span class="n">viewDidLoad</span><span class="p">];</span>
-</span><span class='line'>    <span class="n">NSNotificationCenter</span> <span class="o">*</span><span class="n">center</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSNotificationCenter</span> <span class="n">defaultCenter</span><span class="p">];</span>
-</span><span class='line'>    <span class="p">[</span><span class="n">center</span> <span class="nl">removeObserver:</span><span class="n">self</span> <span class="nl">name:</span><span class="n">AWESOME_NOTIFICATION</span> <span class="nl">object:</span><span class="nb">nil</span><span class="p">];</span>
-</span><span class='line'>    <span class="p">[</span><span class="n">center</span> <span class="nl">addObserver:</span><span class="n">self</span> <span class="nl">selector:</span><span class="k">@selector</span><span class="p">(</span><span class="nl">_handleAwesome:</span><span class="p">)</span> <span class="nl">name:</span><span class="n">AWESOME_NOTIFICATION</span> <span class="nl">object:</span><span class="nb">nil</span><span class="p">];</span>
-</span><span class='line'><span class="p">}</span>
-</span><span class='line'>
-</span><span class='line'><span class="k">-</span> <span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="nf">viewWillDisappear:</span><span class="p">(</span><span class="kt">BOOL</span><span class="p">)</span><span class="nv">animated</span> <span class="p">{</span>
-</span><span class='line'>    <span class="p">[</span><span class="n">super</span> <span class="nl">viewWillDisappear:</span><span class="n">animated</span><span class="p">];</span>
-</span><span class='line'>    <span class="n">NSNotificationCenter</span> <span class="o">*</span><span class="n">center</span> <span class="o">=</span> <span class="p">[</span><span class="n">NSNotificationCenter</span> <span class="n">defaultCenter</span><span class="p">];</span>
-</span><span class='line'>    <span class="p">[</span><span class="n">center</span> <span class="nl">removeObserver:</span><span class="n">self</span> <span class="nl">name:</span><span class="n">AWESOME_NOTIFICATION</span> <span class="nl">object:</span><span class="nb">nil</span><span class="p">];</span>
-</span><span class='line'><span class="p">}</span>
-</span></code></pre></td></tr></table></div></figure>
-
+<p>Liquid error: Could not open library &#8216;lib.so&#8217;: lib.so: cannot open shared object file: No such file or directory</p>
 
 <p>Because the view&#8217;s life cycle in iOS is not clearly defined over multiple situations (enter background, user interrupt, phone call, etc.), sometimes
 adding and removing observers inside incorrect view controller methods will make the notification being handeled twice or none at all. The above code
