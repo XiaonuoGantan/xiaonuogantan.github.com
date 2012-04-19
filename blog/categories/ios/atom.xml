@@ -4,7 +4,7 @@
   <title><![CDATA[Category: iOS | Xiaonuo Gantan's Blog]]></title>
   <link href="http://XiaonuoGantan.github.com/blog/categories/ios/atom.xml" rel="self"/>
   <link href="http://XiaonuoGantan.github.com/"/>
-  <updated>2012-04-16T21:39:26+00:00</updated>
+  <updated>2012-04-19T22:08:33+00:00</updated>
   <id>http://XiaonuoGantan.github.com/</id>
   <author>
     <name><![CDATA[Xiaonuo Gantan]]></name>
@@ -12,6 +12,15 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[iOS Constants]]></title>
+    <link href="http://XiaonuoGantan.github.com/blog/2012/04/19/ios-constants/"/>
+    <updated>2012-04-19T22:07:00+00:00</updated>
+    <id>http://XiaonuoGantan.github.com/blog/2012/04/19/ios-constants</id>
+    <content type="html"><![CDATA[<p>A Photo captured by a iPod Touch 3rd Gen Camera has 1280x720 pixels in it.</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[iOS NSNotificationCenter Pattern]]></title>
